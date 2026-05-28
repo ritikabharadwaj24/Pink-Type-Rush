@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pink Pixel Type Rush Arcade 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- RESULT SCREEN -->
+<div id="resultScreen">
+ <h1>💖 Game Over 💖</h1>
+    <p id="finalStats"></p>
+    <button onclick="location.reload()">Play Again</button>
+</div>
+
+<div class="container">
+
+<h1>💖 Pink Pixel Type Rush Arcade 💖</h1>
+
+<div class="game-box">
+
+<input id="playerName" placeholder="Enter name 💕">
+
+<select id="difficulty">
+    <option value="easy">Easy 🌸</option>
+     <option value="medium">Medium 💖</option>
+    <option value="hard">Hard 🔥</option>
+</select>
+
+<div id="sentence">Press Start 💖</div>
+
+ <input id="input" disabled>
+
+<div class="stats">
+    <div>⏱ <span id="time">60</span>s</div>
+    <div>🔥 <span id="score">0</span></div>
+      <div>⚡ WPM <span id="wpm">0</span></div>
+    <div>🎯 <span id="acc">100</span>%</div>
+</div>
+
+<div class="bar-container">
+     <div class="bar-fill" id="bar"></div>
+    <div id="heart">💖</div>
+</div>
+
+ <button onclick="startGame()">Start Game</button>
+
+</div>
+  </div>
+
+<script src="script.js"></script>
+  <p class="footer">Built by Ritika as a frontend practice project</p>
+</body>
+</html>

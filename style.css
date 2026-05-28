@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: "Baloo 2", cursive;
+    background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 15px;
+    text-shadow: 0 0 12px #ff1493;
+}
+
+.game-box {
+    margin-top: 10px;
+    background: rgba(255,255,255,0.25);
+    padding: 20px;
+    border-radius: 18px;
+    width: 90%;
+    max-width: 750px;
+     text-align: center;
+      backdrop-filter: blur(10px);
+}
+
+input, select {
+    width: 90%;
+    padding: 12px;
+    margin: 6px;
+    border-radius: 12px;
+    border: none;
+    font-family: inherit;
+}
+#sentence {
+    font-size: 22px;
+     margin: 12px 0;
+}
+
+.stats {
+    display: flex;
+     justify-content: space-around;
+      flex-wrap: wrap;
+}
+
+button {
+     margin-top: 10px;
+    padding: 10px 18px;
+    border: none;
+     border-radius: 12px;
+     background: #ff1493;
+    color: white;
+     cursor: pointer;
+}
+
+.bar-container {
+    width: 90%;
+    height: 16px;
+     background: rgba(255,255,255,0.3);
+    border-radius: 20px;
+    position: relative;
+     margin-top: 10px;
+      overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+     width: 100%;
+     background: linear-gradient(90deg,#ff1493,#ff69b4,#ffb6c1);
+    transition: width 0.25s ease;
+}
+
+#heart {
+    position: absolute;
+    top: -6px;
+    left: 0%;
+    transform: translateX(-50%);
+    transition: left 0.25s ease;
+}
+
+#resultScreen {
+    position: fixed;
+     inset: 0;
+     display: none;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background: radial-gradient(circle, #ff1493, #ff69b4);
+    z-index: 999;
+}
